@@ -8,7 +8,7 @@ of the License, or (at your option) any later version.
 
 This program is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 See the GNU General Public License for more details.
 
@@ -18,6 +18,7 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 
 */
 
+#include "BtnsBMPTable.h"
 #include "Framework.h"
 #include "Bitmap.h"
 #include "PicButton.h"
@@ -67,6 +68,8 @@ void CMenuOptions::_Init( void )
 		PC_GAMEPAD, UI_GamePad_Menu, QMF_NOTIFY, 'g' );
 	AddButton( L( "Update" ), L( "Check for updates" ),
 		PC_UPDATE, msgBox.MakeOpenEvent(), QMF_NOTIFY );
+	AddButton( L( "Language" ), L( "Change game language" ),
+		PC_LANGUAGE, UI_Language_Menu, QMF_NOTIFY );
 	AddButton( L( "Done" ), L( "Go back to the Main menu" ),
 		PC_DONE, VoidCb( &CMenuOptions::Hide ), QMF_NOTIFY );
 }

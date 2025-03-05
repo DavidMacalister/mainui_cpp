@@ -15,7 +15,7 @@ GNU General Public License for more details.
 
 #ifndef MENU_BTNSBMP_TABLE_H
 #define MENU_BTNSBMP_TABLE_H
-	
+
 enum EDefaultBtns
 {
 	PC_NEW_GAME = 0,
@@ -94,6 +94,7 @@ enum EDefaultBtns
 
 // Non-standard button images start here
 #define PC_GAMEPAD       "gfx/shell/btn_gamepad"
+#define PC_LANGUAGE      "gfx/shell/btn_language"
 #define PC_TOUCH         "gfx/shell/btn_touch"
 #define PC_TOUCH_OPTIONS "gfx/shell/btn_touch_options"
 #define PC_TOUCH_BUTTONS "gfx/shell/btn_touch_buttons"
